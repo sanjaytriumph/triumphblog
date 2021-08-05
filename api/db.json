@@ -1,34 +1,77 @@
 {
   "login": [
     {
-		"username": "sanjaykumar",
-		"password": "sanjay123"
+      "username": "sanjaykumar",
+      "password": "sanjay123",
+      "role": "admin",
+      "name": "Sanjay Kumar",
+      "id": 1
+    },
+    {
+      "username": "vijaykumar",
+      "password": "vijay123",
+      "role": "user",
+      "name": "Vijay Kumar",
+      "id": 2
+    },
+    {
+      "username": "ajaykumar",
+      "password": "ajay123",
+      "role": "user",
+      "name": "Ajay Kumar",
+      "id": 3
     }
   ],
   "posts": [
     {
-		"id": 1,
-		"title": "Lorem ipsum dummy content",
-		"content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
-		"category":"react"
+      "title": "Distracted by the readablerrr",
+      "content": "fafasfsa",
+      "id": 3
     },
-	{
-		"id": 2,
-		"title": "Established fact that a reader",
-		"content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
-		"category":"react"
+    {
+      "title": "onrfafafafafasfasfasfaffaffaf",
+      "content": "affsafasfasfafaafafafasf asfasfa",
+      "id": 5
     },
-	{
-		"id": 3,
-		"title": "Distracted by the readable",
-		"content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
-		"category":"react"
+    {
+      "title": "dummy title coming here",
+      "content": "dummy content will come here.",
+      "id": 6
     },
-	{
-		"id": 4,
-		"title": "The point of using Lorem Ipsum",
-		"content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
-		"category":"react"
+    {
+      "title": "dummy title coming here",
+      "content": "dummy content will come here.",
+      "id": 7
+    },
+    {
+      "title": "dummy title coming here",
+      "content": "dummy content will come here.",
+      "id": 8
+    },
+    {
+      "title": "ON title coming here",
+      "content": "dummy content will come here.",
+      "id": 9
+    },
+    {
+      "title": "fafaf",
+      "content": "dynamic content esting",
+      "id": 10
+    },
+    {
+      "title": "this is another test for dynamic post",
+      "content": "lorem ipsum dynamic post content here.",
+      "id": 11
+    },
+    {
+      "title": "this is another test for dynamic post",
+      "content": "fafas afasf sa",
+      "id": 12
+    },
+    {
+      "title": "fafafafasfas fasfasfas a",
+      "content": "sfsfsa fasfasfsa sfasf",
+      "id": 13
     }
   ]
 }
