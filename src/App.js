@@ -20,6 +20,14 @@ function App() {
   const [loggedin, setLoggedin] = useState(sessionStorage.getItem('loggedIn'));
   const value = { loggedin, setLoggedin };
   console.log(loggedin);
+  let url='';
+  if(process.env.NODE_ENV === 'development') {
+    url = 'http://localhost:3000/'
+  }
+  
+  if(process.env.NODE_ENV === 'production') {
+    url = 'https://my-json-server.typicode.com/sanjaytriumph/mockjson/'
+  }
   return (
     <LoggedinContext.Provider value={value}>
       <BrowserRouter>
@@ -27,7 +35,7 @@ function App() {
       {/* <h2>Current LoggedIn: {loggedin}</h2> */}
         <NavBar/>
         <Switch>
-          <Route exact path = '/'><Home/></Route>
+          <Route exact path = '/'><Home apiurl ={url}/></Route>
           <Route exact path = '/post-detail/:id'><PostDetail/></Route>
           <Route exact path = '/add-post'><AddPost/></Route>
           

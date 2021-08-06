@@ -2,7 +2,7 @@ import React,{useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
 
-const PostList = function(){
+const PostList = function(props){
     const [posts, setPosts] = useState([]);
     
     function fetchData() {
@@ -10,7 +10,7 @@ const PostList = function(){
         // const data = await res.json();
 
         // return setPosts(data);
-        axios.get('http://localhost:3000/posts')
+        axios.get(`${props.apiurl}posts`)
         .then(res => {
           const pdata = res.data;
           return setPosts(pdata);

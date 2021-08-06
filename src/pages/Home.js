@@ -2,10 +2,10 @@ import React from 'react';
 import PostList from '../components/PostList';
 
 
-const Home = function(){
+const Home = function(props){
     
     return <>
-        <PostList/>
+        <PostList apiurl={props.apiurl}/>
     </>
 }
 
