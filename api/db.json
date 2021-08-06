@@ -64,14 +64,14 @@
       "id": 11
     },
     {
-      "title": "this is another test for dynamic post",
-      "content": "fafas afasf sa",
-      "id": 12
-    },
-    {
-      "title": "fafafafasfas fasfasfas a",
+      "title": "fafafafasfas fasfasfas a prabhat",
       "content": "sfsfsa fasfasfsa sfasf",
       "id": 13
+    },
+    {
+      "title": "Prabhat dummy content",
+      "content": "lorem ipsum dummy content for typestting industries.",
+      "id": 14
     }
   ]
 }
