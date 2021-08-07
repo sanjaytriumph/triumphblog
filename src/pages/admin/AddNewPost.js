@@ -3,7 +3,7 @@ import AddPost from '../../components/AddPost';
 
 import DashboardMenu from '../../components/DashboardMenu';
 
-const AddNewPost = () =>{
+const AddNewPost = (props) =>{
     return <>
         <div className="row">
             <div className="col-md-3">
@@ -15,7 +15,7 @@ const AddNewPost = () =>{
                         Add New Post
                     </div>
                     <div className="card-body">
-                        <AddPost/>
+                        <AddPost apiurl={props.apiurl}/>
                     </div>
                 </div>
             </div>

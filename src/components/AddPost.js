@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 import { Redirect } from 'react-router';
 import axios from 'axios';
 
-const AddPost = function(){
+const AddPost = function(props){
     const [posts, setPosts] = useState([]);
     const [value, setValue] = useState({
         postTitle:'',
@@ -26,7 +26,7 @@ const AddPost = function(){
             title: value.postTitle,
             content: value.postContent
         }
-        axios.post("http://localhost:3000/posts",requestOptions)
+        axios.post(`${props.apiurl}posts`,requestOptions)
         .then(res => {
             setSubmitted(true);
             const pdata = res.data;

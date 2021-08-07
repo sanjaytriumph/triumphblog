@@ -46,7 +46,7 @@ function App() {
             (loggedin)?
             <>
             <Route exact path = '/admin/dashboard'><Dashboard/></Route>
-            <Route exact path = '/admin/add-new-post'><AddNewPost/></Route>
+            <Route exact path = '/admin/add-new-post'><AddNewPost apiurl={url}/></Route>
             <Route exact path = '/admin/all-posts'><AllPosts apiurl={url}/></Route>
             <Route exact path = '/admin/edit-post/:id'><EditPostPage apiurl={url}/></Route>
             <Route exact path = '/admin/delete-post/:id'><DeletePost apiurl={url}/></Route>
