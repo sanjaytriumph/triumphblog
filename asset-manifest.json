@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/triumphblog/static/css/main.1a130487.chunk.css",
-    "main.js": "/triumphblog/static/js/main.4e3ad972.chunk.js",
-    "main.js.map": "/triumphblog/static/js/main.4e3ad972.chunk.js.map",
+    "main.js": "/triumphblog/static/js/main.f3591f48.chunk.js",
+    "main.js.map": "/triumphblog/static/js/main.f3591f48.chunk.js.map",
     "runtime-main.js": "/triumphblog/static/js/runtime-main.29d7bf1a.js",
     "runtime-main.js.map": "/triumphblog/static/js/runtime-main.29d7bf1a.js.map",
     "static/css/2.e0ca1a10.chunk.css": "/triumphblog/static/css/2.e0ca1a10.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.e0ca1a10.chunk.css",
     "static/js/2.58fa888b.chunk.js",
     "static/css/main.1a130487.chunk.css",
-    "static/js/main.4e3ad972.chunk.js"
+    "static/js/main.f3591f48.chunk.js"
   ]
 }
