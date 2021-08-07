@@ -3,7 +3,7 @@ import { Redirect } from 'react-router';
 import axios from 'axios';
 import LoggedinContext from '../loggedin-context';
 
-const Login = () => {
+const Login = (props) => {
     const { loggedin, setLoggedin } = useContext(LoggedinContext);
     const [submitted, setSubmitted] = useState(false);
     const [value, setValue] = useState({
@@ -27,7 +27,7 @@ const Login = () => {
         e.preventDefault();  
         if (value.username && value.password ) {
             console.log(`submitted with the values ${value.username} and ${value.password}`);
-            axios.get('http://localhost:3000/login')
+            axios.get(`${props.apiurl}login`)
             .then(res => {
             const pdata = res.data;
             //return setPosts(pdata);

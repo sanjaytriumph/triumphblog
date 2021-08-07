@@ -3,7 +3,7 @@ import {useParams} from 'react-router-dom';
 import axios from 'axios';
 import { Redirect } from 'react-router';
 
-const DeletePost = function(){
+const DeletePost = function(props){
     const [posts, setPosts] = useState([]);
     const {id} = useParams();
    
@@ -11,7 +11,8 @@ const DeletePost = function(){
     //console.log(postId);
     const [submitted, setSubmitted] = useState(false);
 
-    const apiURL = 'http://localhost:3000/posts/'+postId;
+    // const apiURL = 'http://localhost:3000/posts/'+postId;
+    const apiURL = `${props.apiurl}posts/${postId}`;
     const fetchData = function(){
         axios.delete(apiURL)
         .then(res => {

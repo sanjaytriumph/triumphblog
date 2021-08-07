@@ -5,7 +5,7 @@ import AdminPostList from '../../components/admin/AdminPostList';
 import DashboardMenu from '../../components/DashboardMenu';
 
 
-const PostLists = () =>{
+const AllPosts = (props) =>{
     return <>
         <div className="row">
             <div className="col-md-3">
@@ -17,7 +17,7 @@ const PostLists = () =>{
                         Add New Post
                     </div>
                     <div className="card-body">
-                        <AdminPostList/>
+                        <AdminPostList apiurl = {props.apiurl}/>
                     </div>
                 </div>
             </div>
@@ -26,4 +26,4 @@ const PostLists = () =>{
     </>
 }
 
-export default PostLists
+export default AllPosts

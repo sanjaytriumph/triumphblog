@@ -9,7 +9,9 @@ const PostDetail = function(props){
     const postId = id.replace(':','');
     //console.log(postId);
     
-    const apiURL = 'http://localhost:3000/posts?id='+postId;
+    //const apiURL = 'http://localhost:3000/posts?id='+postId;
+
+    const apiURL = `${props.apiurl}posts?id=${postId}`;
     //console.log(apiURL);
     const fetchData = function(){
         axios.get(apiURL)

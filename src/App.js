@@ -36,20 +36,20 @@ function App() {
         <NavBar/>
         <Switch>
           <Route exact path = '/'><Home apiurl ={url}/></Route>
-          <Route exact path = '/post-detail/:id'><PostDetail/></Route>
+          <Route exact path = '/post-detail/:id'><PostDetail apiurl={url}/></Route>
           <Route exact path = '/add-post'><AddPost/></Route>
           
           
-          <Route exact path = '/login'><Login/></Route>
+          <Route exact path = '/login'><Login apiurl={url}/></Route>
           <Route exact path = '/logout'><Logout/></Route>
           {
             (loggedin)?
             <>
             <Route exact path = '/admin/dashboard'><Dashboard/></Route>
             <Route exact path = '/admin/add-new-post'><AddNewPost/></Route>
-            <Route exact path = '/admin/all-posts'><AllPosts/></Route>
-            <Route exact path = '/admin/edit-post/:id'><EditPostPage/></Route>
-            <Route exact path = '/admin/delete-post/:id'><DeletePost/></Route>
+            <Route exact path = '/admin/all-posts'><AllPosts apiurl={url}/></Route>
+            <Route exact path = '/admin/edit-post/:id'><EditPostPage apiurl={url}/></Route>
+            <Route exact path = '/admin/delete-post/:id'><DeletePost apiurl={url}/></Route>
             </>
           :''
           }

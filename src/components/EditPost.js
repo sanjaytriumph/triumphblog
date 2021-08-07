@@ -21,11 +21,12 @@ const EditPost = function(props){
 
     const postId = id.replace(':','');
     console.log(postId);
-
+    console.log(props);
    
 
     const fetchData = () =>{
-        axios.get("http://localhost:3000/posts/"+postId)
+        // axios.get("http://localhost:3000/posts/"+postId)
+        axios.get(`${props.apiurl}posts/${postId}`)
         .then(res => {
             const pdata = res.data;
             return setPosts(pdata);
@@ -44,8 +45,9 @@ const EditPost = function(props){
     }
 
     const postData = () =>{
-
-        axios.patch("http://localhost:3000/posts/"+postId,{
+        
+        // axios.patch("http://localhost:3000/posts/"+postId,{
+            axios.patch(`${props.apiurl}posts/${postId}`,{
             title: value.postTitle,
             content: value.postContent            
         })
@@ -58,6 +60,7 @@ const EditPost = function(props){
     }
     const onSubmitHandler= (e) =>{
         e.preventDefault();
+        
         console.log('submitted');
         postData();
         

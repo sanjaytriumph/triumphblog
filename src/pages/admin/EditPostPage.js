@@ -3,7 +3,7 @@ import React from 'react';
 import DashboardMenu from '../../components/DashboardMenu';
 import EditPost from '../../components/EditPost';
 
-const EditPostPage = () =>{
+const EditPostPage = (props) =>{
     return <>
         <div className="row">
             <div className="col-md-3">
@@ -15,7 +15,7 @@ const EditPostPage = () =>{
                        Edit Post
                     </div>
                     <div className="card-body">
-                        <EditPost/>
+                        <EditPost apiurl={props.apiurl}/>
                     </div>
                 </div>
             </div>
