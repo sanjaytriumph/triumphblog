@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { useState } from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
 import NavBar from "./components/NavBar";
 import PostDetail from "./components/PostDetail";
@@ -31,7 +31,7 @@ function App() {
   }
   return (
     <LoggedinContext.Provider value={value}>
-      <BrowserRouter>
+      <HashRouter>
         <div className="container-fluid">
           <div className="row">
             <NavBar />
@@ -81,7 +81,7 @@ function App() {
           )}
           <Route component={PageNotFound} />
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
     </LoggedinContext.Provider>
   );
 }
