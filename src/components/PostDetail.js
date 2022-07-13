@@ -1,45 +1,46 @@
-import React,{useState,useEffect} from 'react';
-import {useParams} from 'react-router-dom';
-import axios from 'axios';
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import axios from "axios";
 
-const PostDetail = function(props){
-    const [posts, setPosts] = useState([]);
-    
-    const {id} = useParams();   
-    const postId = id.replace(':','');
-    //console.log(postId);
-    
-    //const apiURL = 'http://localhost:3000/posts?id='+postId;
+const PostDetail = function (props) {
+  const [posts, setPosts] = useState([]);
 
-    const apiURL = `${props.apiurl}posts?id=${postId}`;
-    //console.log(apiURL);
-    const fetchData = function(){
-        axios.get(apiURL)
-        .then(res => {
-          const pdata = res.data;
-          return setPosts(pdata);
-        })
-    }
+  const { id } = useParams();
+  const postId = id.replace(":", "");
+  //console.log(postId);
 
-      useEffect(() => {
-        fetchData();        
-      },[]);
+  //const apiURL = 'http://localhost:3000/posts?id='+postId;
 
-    return <>       
-        {
-            posts.map((item) =>{
-                return (<article className="card mb-4" key={item.id}>
-                <div className="card-header">
+  const apiURL = `${props.apiurl}posts?id=${postId}`;
+  //console.log(apiURL);
+  const fetchData = function () {
+    axios.get(apiURL).then((res) => {
+      const pdata = res.data;
+      return setPosts(pdata);
+    });
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  return (
+    <>
+      <div className="container pt-3">
+        {posts.map((item) => {
+          return (
+            <article className="card mb-4" key={item.id}>
+              <img src={item.thumbnail} alt="" />
+              <div className="card-header">
                 <h2 className="h4">{item.title}</h2>
-                </div>                    
-                <div className="card-body article-content">
-                    {item.content}
-                </div>
-            </article>)
-            })
-        }
-       
+              </div>
+              <div className="card-body article-content">{item.content}</div>
+            </article>
+          );
+        })}
+      </div>
     </>
-}
+  );
+};
 
 export default PostDetail;

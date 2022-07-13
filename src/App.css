@@ -1,6 +1,44 @@
 body{
   background-color: mediumseagreen;
+  padding-top:56px;
 }
 .list-group-item.active a{
   color:#fff;
+}
+
+.banner{
+  background-color: #000;
+  color:white;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.banner h1{
+  font-size:5.0rem;
+}
+.post-title{
+  font-size:1.4rem;
+  overflow: hidden;  
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.post-title a{
+  color:#000;
+  text-decoration: none;
+}
+
+.dashboardmenu-col{
+  height: 100%;
+    background-color: #000;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+}
+.dashboarditem-col{
+  margin-left:auto;
+}
+
+.dashboardmenu-col .userdata{
+  color:#fff;
+  text-align: center;
+  margin-bottom: 15px;
 }
